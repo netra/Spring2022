@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="cto" name="cto"
+		class="apex1.spring.core1.pojo.autowiring.User" autowire="byType">
+		<property name="userName" value="CTO"></property>
+		<property name="userSalary">
+		  <ref bean="salaryCTO"/>
+		</property>
+	</bean>
+
+	<bean id="salaryCTO" name="salaryCTO"
+		class="apex1.spring.core1.pojo.autowiring.Salary">
+		<property name="netSalary" value="15000"></property>
+		<property name="taxDeduction" value="5.0"></property>
+	</bean>
+	<bean id="ceo" name="ceo"
+		class="apex1.spring.core1.pojo.autowiring.User" autowire="byType">
+		<property name="userName" value="CEO"></property>
+		<property name="userSalary" >
+		<ref bean="salaryCEO"/>
+		</property>
+	</bean>
+	<bean id="salaryCEO" name="salaryCEO"
+		class="apex1.spring.core1.pojo.autowiring.Salary">
+		<property name="netSalary" value="20000"></property>
+		<property name="taxDeduction" value="10.0"></property>
+	</bean>
+	<bean id="company" name="company"
+		class="apex1.spring.core1.pojo.autowiring.Company">
+		<property name="companyId" value="TSL"></property>
+		<property name="companyName" value="TESLA MOTARS"></property>
+	</bean>
+</beans>

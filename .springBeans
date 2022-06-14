@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.21.202203211437-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>beans.xml</config>
+		<config>scr/main/beans/person.xml</config>
+		<config>scr/main/beans/collections.xml</config>
+		<config>scr/main/beans/scopes.xml</config>
+		<config>scr/main/beans/Lifecycle.xml</config>
+		<config>scr/main/beans/autowiring.xml</config>
+		<config>scr/main/beans/annotation_autowiring.xml</config>
+	</configs>
+	<autoconfigs>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>

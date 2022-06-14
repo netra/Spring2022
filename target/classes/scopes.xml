@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    
+	<bean id="scopeId_singleton" name="singleton_name"
+		class="apex1.spring.core1.pojo.ScopeDemoClass" lazy-init="true"
+		scope="singleton">
+		<property name="str" value="Singleton_MyOriginalString"></property>
+	</bean>
+	<bean id="scopeId_prototype" name="prototypt_name"
+		class="apex1.spring.core1.pojo.ScopeDemoClass" scope="prototype">
+		<property name="str" value="Prototype_MyOriginalString"></property>
+	</bean>
+
+</beans>

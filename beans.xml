@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="id1" name="idname"
+		class="apex1.spring.core1.pojo.Student">
+		<property name="age" value="30"></property>
+		<property name="name" value="Netra"></property>
+		<property name="address" ref="idAdd1"></property>
+	</bean>
+
+	<bean id="id2" name="idname2"
+		class="apex1.spring.core1.pojo.Student">
+		<property name="age" value="14"></property>
+		<property name="name" value="Aryan"></property>
+		<property name="address" ref="idAdd2"></property>
+	</bean>
+	
+	<bean id="id3" name="idname3"
+		class="apex1.spring.core1.pojo.Student">
+		<property name="age" value="3"></property>
+		<property name="name" value="Eshan"></property>
+		<property name="address" ref="idAdd2"></property>
+	</bean>
+	
+	
+	
+	<bean id="idAdd1" class="apex1.spring.core1.pojo.Address">
+		<property name="city" value="Cupertino"></property>
+		<property name="state" value="California"></property>
+	</bean>
+	<bean id="id4" class="apex1.spring.core1.pojo.Student">
+		<property name="name" value="Nia"></property>
+		<property name="age" value="10"></property>
+		<property name="address" ref="idAdd3"></property>
+	</bean>
+	<bean id="idAdd2" class="apex1.spring.core1.pojo.Address">
+		<property name="city" value="San Jose"></property>
+		<property name="state" value="California"></property>
+	</bean>
+	<bean id="idAdd3" class="apex1.spring.core1.pojo.Address">
+		<property name="city" value="Saratoga"></property>
+		<property name="state" value="California"></property>
+	</bean>
+</beans>

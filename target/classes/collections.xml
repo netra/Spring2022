@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id = "collectionId" name="collectionName" 
+class ="apex1.spring.core1.pojo.CollectionsDemoClass">
+      
+      <!-- results in a setAddressList(java.util.List) call -->
+      <property name = "listObj">
+         <list>
+            <value type="java.lang.Integer">100</value>
+            <value type="java.lang.Integer">200</value>
+           
+         </list>
+      </property>
+      <property name = "listObj1">
+         <list>
+            <value type="java.lang.Integer">1000</value>
+            <value type="java.lang.Integer">2000</value>
+           
+         </list>
+      </property>
+     <property name = "mapObj">
+         <map>
+              <entry key="11" value="a"></entry>
+              <entry key="21" value="b"></entry>
+              <entry key="31" value="c"></entry>
+              <entry key="41" value="d"></entry>
+         </map>
+	  </property>
+
+      
+         <property name = "mapObj1">
+         <map>
+              <entry key="1" value="aaa"></entry>
+              <entry key="2" value="bbb"></entry>
+              <entry key="3" value="ccc"></entry>
+              <entry key="4" value="ddd"></entry>
+         </map>
+	  </property>
+	 </bean>
+</beans>
